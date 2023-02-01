@@ -1,0 +1,9 @@
+(x)criar mensagem de introdução
+(x)criar menu de escolha 
+()criar os componentes do jogo (X e O)
+()criar instruções para o jogo
+()criar uma função de seleção da posição desejada
+()criar a função do jogador bot
+()criar o placar de partidas
+()criar menu de dificuldade
+()alterar a funcionalidade do bot de acordo com o nivel de dificuldade
