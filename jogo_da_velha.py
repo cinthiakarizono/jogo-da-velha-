@@ -21,14 +21,14 @@ while s == False:
         print("Opção inválida")
 
 
-a = "  O  |  O  |  O  \n-----------------\n  O  |  5  |  6  \n-----------------\n  7  |  8  |  9  "
-
-n = 0
+a = "  1 |  2  |  3  \n-----------------\n  4 |  5  |  6  \n-----------------\n  7 |  8  |  9  "
+   
 while True:
     print("Mapa do tabuleiro")
     print(a)
     
-def jogada_player(p):
+
+    
     jogada = input(f"Você é {p}, faça sua jogada: ")
     jogada = int(jogada)
     ok = True
@@ -37,6 +37,7 @@ def jogada_player(p):
         if(jogada in a):
             a = a.replace(jogada, p)
             print(a)
+           
         else:
             print("Escolha outra opção")
             ok = False
@@ -45,7 +46,6 @@ def jogada_player(p):
         
 
 
-def jogada_bot(b):
     ok = False
     while ok == False:
         j = str(random.randrange(1,10))
@@ -55,4 +55,9 @@ def jogada_bot(b):
             print(a)
             ok = True
         else:
-            ok = False
+            ok = False  
+ 
+        
+        
+
+    
