@@ -23,6 +23,8 @@ while s == False:
 
 a = "  1 |  2  |  3  \n-----------------\n  4 |  5  |  6  \n-----------------\n  7 |  8  |  9  "
    
+
+    
 while True:
     print("Mapa do tabuleiro")
     print(a)
@@ -37,7 +39,28 @@ while True:
         if(jogada in a):
             a = a.replace(jogada, p)
             print(a)
-           
+            if (a[2] and a[7] and a[13] == p):
+                print("Ganhou")
+                break
+            elif (a[37] and a[42] and a[48] == p):
+                print("Ganhou")
+                break
+            elif (a[72] and a[77] and a[83] == p):
+                print("Ganhou")
+                break
+            elif (a[2] and a[37] and a[72] == p):
+                print("Ganhou")
+                break
+            elif (a[7] and a[42] and a[77] == p):
+                print("Ganhou")
+                break
+            elif (a[2] and a[42] and a[83] == p):
+                print("Ganhou")
+                break
+            elif (a[13] and a[42] and a[72] == p):
+                print("Ganhou")
+                break
+            
         else:
             print("Escolha outra opção")
             ok = False
@@ -54,10 +77,33 @@ while True:
             a = a.replace(j, b)
             print(a)
             ok = True
+            print(a)
+            
+            if (a[2] and a[7] and a[13] == b):
+                print("Perdeu")
+                break
+            elif (a[37] and a[42] and a[48] == b):
+                print("Perdeu")
+                break
+            elif (a[72] and a[77] and a[83] == b):
+                print("Perdeu")
+                break
+            elif (a[2] and a[37] and a[72] == b):
+                print("Perdeu")
+                break
+            elif (a[7] and a[42] and a[77] == b):
+                print("Perdeu")
+                break
+            elif (a[2] and a[42] and a[83] == b):
+                print("Perdeu")
+                break
+            elif (a[13] and a[42] and a[72] == b):
+                print("Perdeu")
+                break
         else:
             ok = False  
  
-        
+
         
 
     
