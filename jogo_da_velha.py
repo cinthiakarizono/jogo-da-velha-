@@ -34,31 +34,32 @@ while True:
     jogada = input(f"Você é {p}, faça sua jogada: ")
     jogada = int(jogada)
     ok = True
+    c = 0
     if(0<jogada<10 and ok == True ):
         jogada = str(jogada)
         if(jogada in a):
             a = a.replace(jogada, p)
             print(a)
-            if (a[2] and a[7] and a[13] == p):
-                print("Ganhou")
+            if (bool(a[2] == p) and bool(a[7] == p) and bool(a[13] == p)):
+                print("------\nGanhou\n------")
                 break
-            elif (a[37] and a[42] and a[48] == p):
-                print("Ganhou")
+            elif (bool(a[37] == p) and bool(a[42] == p) and bool(a[48] == p)):
+                print("------\nGanhou\n------")
                 break
-            elif (a[72] and a[77] and a[83] == p):
-                print("Ganhou")
+            elif (bool(a[72] == p) and bool(a[77] == p) and bool(a[83] == p)):
+                print("------\nGanhou\n------")
                 break
-            elif (a[2] and a[37] and a[72] == p):
-                print("Ganhou")
+            elif (bool(a[2] == p) and bool(a[37] == p) and bool(a[72] == p)):
+                print("------\nGanhou\n------")
                 break
-            elif (a[7] and a[42] and a[77] == p):
-                print("Ganhou")
+            elif (bool(a[7] == p) and bool(a[42] == p) and bool(a[77] == p)):
+                print("------\nGanhou\n------")
                 break
-            elif (a[2] and a[42] and a[83] == p):
-                print("Ganhou")
+            elif (bool(a[2] == p) and bool(a[42] == p) and bool(a[83] == p)):
+                print("------\nGanhou\n------")
                 break
-            elif (a[13] and a[42] and a[72] == p):
-                print("Ganhou")
+            elif (bool(a[13] == p) and bool(a[42] == p) and bool(a[72] == p)):
+                print("------\nGanhou\n------")
                 break
             
         else:
@@ -72,37 +73,42 @@ while True:
     ok = False
     while ok == False:
         j = str(random.randrange(1,10))
-        print(j)
+        
         if j in a:
             a = a.replace(j, b)
-            print(a)
             ok = True
-            print(a)
-            
-            if (a[2] and a[7] and a[13] == b):
-                print("Perdeu")
+                        
+            if (bool(a[2] == b) and bool(a[7] == b) and bool(a[13] == b)):
+                print("------\nPerdeu\n------")
+                ok = True
                 break
-            elif (a[37] and a[42] and a[48] == b):
-                print("Perdeu")
+            elif (bool(a[37] == b) and bool(a[42] == b) and bool(a[48] == b)):
+                print("------\nPerdeu\n------")
+                ok = True
                 break
-            elif (a[72] and a[77] and a[83] == b):
-                print("Perdeu")
+            elif (bool(a[72] == b) and bool(a[77] == b) and bool(a[83] == b)):
+                print("------\nPerdeu\n------")
+                ok = True
                 break
-            elif (a[2] and a[37] and a[72] == b):
-                print("Perdeu")
+            elif (bool(a[2] == b) and bool(a[37]== b) and bool(a[72] == b)):
+                print("------\nPerdeu\n------")
+                ok = True
                 break
-            elif (a[7] and a[42] and a[77] == b):
-                print("Perdeu")
+            elif (bool(a[7] == b) and bool(a[42] == b)and bool(a[77] == b)):
+                print("------\nPerdeu\n------")
+                ok = True
                 break
-            elif (a[2] and a[42] and a[83] == b):
-                print("Perdeu")
+            elif (bool(a[2] == b) and bool(a[42] == b) and bool(a[83] == b)):
+                print("------\nPerdeu\n------")
+                ok = True
                 break
-            elif (a[13] and a[42] and a[72] == b):
-                print("Perdeu")
+            elif (bool(a[13] == b) and bool(a[42] == b) and bool(a[72] == b)):
+                print("------\nPerdeu\n------")
+                ok = True
                 break
         else:
             ok = False  
- 
+            
 
         
 

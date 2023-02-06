@@ -8,6 +8,6 @@
 ()criar menu de dificuldade
 ()alterar a funcionalidade do bot de acordo com o nivel de dificuldade
 (x)criar o desenho do tabuleiro com as coordenadas
-()mensagem de ganhador e perdedor
+(x)mensagem de ganhador e perdedor
 (x)restringir dados de entrada
 (x)alternar vez do jogador
